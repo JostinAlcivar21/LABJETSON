@@ -26,7 +26,7 @@ while True:
         break
 
     # Detección con el modelo YOLO
-    results = model(img, stream=True, conf=0.03)
+    results = model(img, stream=True, conf=0.2)
 
     for r in results:
         boxes = r.boxes
